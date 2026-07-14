@@ -12,18 +12,6 @@ This project builds a multi-layer RFM scoring model to classify customers based 
 
 Each dimension is scored 1–5, combined into an RFM profile, and mapped to one of seven business-friendly segments — each with a tailored recommended action.
 
-## 🧩 Segments
-
-| Segment | Description | Recommended Action |
-|---|---|---|
-| **Champions** | Bought recently, buy often, spend the most | Reward, upsell, request referrals |
-| **Loyal** | Consistent, frequent buyers | Upsell higher-value products, loyalty perks |
-| **Potential Loyalists** | Recent customers with average frequency | Offer incentives to increase purchase frequency |
-| **At Risk** | High past value, haven't purchased recently | Personalized win-back campaigns |
-| **Need Attention** | Above-average recency/frequency but slipping | Limited-time offers, re-engagement emails |
-| **Hibernating** | Low recency, frequency, and monetary value | Reactivation campaigns, surveys |
-| **Lost** | Long inactive, minimal historical value | Low-cost reactivation or deprioritize |
-
 ## 🛠️ Technical Approach
 
 - **3 chained CTEs** to progressively build the RFM model:
